@@ -1,0 +1,13 @@
+<!-- Global clock: paste this whole block into your site's code / embed widget. -->
+<span class="global-clock" style="font-family: 'Grotesque L', 'Grotesque', 'Helvetica Neue', Arial, sans-serif; font-weight: 300; font-size: 17pt; font-variant-numeric: tabular-nums;"></span>
+<script>
+(function () {
+  var el = document.currentScript.previousElementSibling;
+  var fmt = new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit" });
+  function tick() {
+    el.textContent = fmt.format(new Date());
+    setTimeout(tick, 1000 - (Date.now() % 1000));
+  }
+  tick();
+})();
+</script>

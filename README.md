@@ -3,7 +3,11 @@
 A drop-in text box that shows each visitor their own local time, using the time zone set on their device.
 Styled in Grotesque L, Light, 17pt.
 
-## Use it
+## Website builders (Wix, Squarespace, Framer, etc.)
+
+Paste the whole contents of `embed.html` into your site's code / embed widget. It has everything inline, so no other file is needed.
+
+## Use it (own site, with the separate script file)
 
 ```html
 <script src="global-clock.js" defer></script>
